@@ -28,59 +28,64 @@
             <div class="input">
                 Nombre: 
                 <input type="text" class="form-control" id="name" />
-                <span id="nameErrorMessage" hidden>Por favor ingrese su nombre</span>
+                <span class="errorMsg" id="nameErrorMessage" hidden>Por favor ingrese su nombre</span>
             </div>
             <div class="input">
                 Apellido: 
                 <input type="text" class="form-control" id="lname" />
-                <span id="lnameErrorMessage" hidden>Por favor ingreses su apellido</span>
+                <span class="errorMsg" id="lnameErrorMessage" hidden>Por favor ingreses su apellido</span>
             </div>
             <div class="input">
                 Correo: 
                 <input type="email" class="form-control" id="email" />
-                <span id="emailErrorMessage" hidden>Por favor de ingresar su correo</span>
+                <span class="errorMsg" id="emailErrorMessage" hidden>Por favor de ingresar su correo</span>
             </div>
             <div class="input">
                 Contraseña: 
                 <input type="password" class="form-control" id="password" />
-                <span id="passwordErrorMessage" hidden>Por favor de ingresar una contraseña</span>
+                <span class="errorMsg" id="passwordErrorMessage" hidden>Por favor de ingresar una contraseña</span>
             </div>
             <div class="input">
                 Confirmar contraseña: 
-                <input type="password" class="form-control" id="email" />
-                <span id="passwordConfErrorMessage" hidden>Por favor de ingresar su correo</span>
+                <input type="password" class="form-control" id="passwordConf" />
+                <span class="errorMsg" id="passwordConfErrorMessage" hidden>Por favor de ingresar su correo</span>
             </div>
 
             
             <div class="input">
                 <label for="country">País:</label>
-                <select class="form-control" id="contry">
+                <select class="form-control" id="country">
                     <option val="0">Select a country</option>
                     <option val="mx">México</option>
                     <option val="us">Estado Unidos</option>
                     <option val="cn">Canada</option>
                 </select>
             </div>
+            <span class="errorMsg" id="countryErrorMessage" hidden>Por favor escoja un país </span>
 
-            <span class="input">Genero:</span>
-            <div class="input">
-                <!-- <label class="form-check-label"> -->
-                    <input type="radio" name="gender"> Hombre
-                <!-- </label> -->
-            </div>
-            <div class="input">
-                <label class="form-check-label">
-                    <input type="radio" name="gender"> Mujer
-                </label>
-            </div>
-            <span id="genderErrorMessage" hidden>Por favor ecoga </span>
+            <div>
+                <label class="input">Genero:</label>
+                <div class="input">
+                    <!-- <label class="form-check-label"> -->
+                        <input type="radio" name="gender"> Hombre
+                    <!-- </label> -->
+                </div>
+                <div class="input">
+                    <label class="form-check-label">
+                        <input type="radio" name="gender"> Mujer
+                    </label>
+                </div>
+                <span class="errorMsg" id="genderErrorMessage" hidden>Por favor escoja un genero</span>
 
+            </div>
+            
             
             <div class="input">
-                <input type="submit" name="submit">
+                <input id="sumbitBtn" type="submit" name="submit">
             </div>
         </div>
         
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="./src/index.js" async defer></script>
     </body>
 </html>

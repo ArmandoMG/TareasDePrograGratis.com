@@ -47,3 +47,7 @@ p, span {
     margin: 1%;
 }
 
+.errorMsg {
+	color: red;
+}
+
