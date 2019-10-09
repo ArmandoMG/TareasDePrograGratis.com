@@ -1,5 +1,5 @@
 function watchForm () {
-    $("#sumbitBtn").on("click", (event) => {
+    document.getElementById("sumbitBtn").addEventListener("onclick",(event) => {
         console.log("hola");
         event.preventDefault();
 
