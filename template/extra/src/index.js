@@ -1,1 +1,0 @@
-var nombre = prompt("hola: ");
